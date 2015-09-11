@@ -1,4 +1,4 @@
-# reusify
+# reusify&nbsp;[![Build Status](https://travis-ci.org/mcollina/reusify.png)](https://travis-ci.org/mcollina/reusify)
 
 Reuse your objects and functions for maximum speed. This technique will
 make any function run ~10% faster. You call your functions a
@@ -20,6 +20,9 @@ The actual numbers might differ for your use case, but the difference
 should not.
 
 The benchmark was taken using Node v4.0.0.
+
+This library was extracted from
+[fastparallel](http://npm.im/fastparallel).
 
 ## Example
 
