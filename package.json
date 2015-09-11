@@ -1,0 +1,37 @@
+{
+  "name": "reusify",
+  "version": "0.0.1",
+  "description": "Reuse objects and functions with style",
+  "main": "reusify.js",
+  "scripts": {
+    "lint": "standard",
+    "test": "tape test.js | faucet "
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcollina/reusify.git"
+  },
+  "keywords": [
+    "reuse",
+    "object",
+    "performance",
+    "function",
+    "fast"
+  ],
+  "author": "Matteo Collina <hello@matteocollina.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mcollina/reusify/issues"
+  },
+  "homepage": "https://github.com/mcollina/reusify#readme",
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "pre-commit": "^1.1.1",
+    "standard": "^5.2.1",
+    "tape": "^4.2.0"
+  }
+}
