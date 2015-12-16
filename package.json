@@ -28,6 +28,10 @@
     "url": "https://github.com/mcollina/reusify/issues"
   },
   "homepage": "https://github.com/mcollina/reusify#readme",
+  "engines": {
+    "node": ">=0.10.0",
+    "iojs": ">=1.0.0"
+  },
   "devDependencies": {
     "faucet": "0.0.1",
     "pre-commit": "^1.1.1",
