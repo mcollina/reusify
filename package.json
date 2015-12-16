@@ -5,7 +5,8 @@
   "main": "reusify.js",
   "scripts": {
     "lint": "standard",
-    "test": "tape test.js | faucet "
+    "test": "tape test.js | faucet",
+    "coverage": "istanbul cover tape test.js; cat coverage/lcov.info | coveralls"
   },
   "pre-commit": [
     "lint",
@@ -28,7 +29,12 @@
     "url": "https://github.com/mcollina/reusify/issues"
   },
   "homepage": "https://github.com/mcollina/reusify#readme",
+  "engines": {
+    "node": ">=0.10.0",
+    "iojs": ">=1.0.0"
+  },
   "devDependencies": {
+    "coveralls": "^2.11.6",
     "faucet": "0.0.1",
     "pre-commit": "^1.1.1",
     "standard": "^5.2.1",
