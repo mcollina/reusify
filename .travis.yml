@@ -2,6 +2,9 @@ language: node_js
 sudo: false
 
 node_js:
+  - 8
+  - 7
+  - 6
   - 5
   - 4
   - 4.0
@@ -17,3 +20,8 @@ cache:
 
 after_script:
 - npm run coverage
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
