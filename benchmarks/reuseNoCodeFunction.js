@@ -18,6 +18,7 @@ function MyObject () {
   var that = this
   this.num = 0
   this.func = function () {
+    /* eslint no-constant-condition: "off" */
     if (null) {
       // do nothing
     } else {
@@ -34,4 +35,3 @@ var time = Date.now() - start
 console.log('Total time', time)
 console.log('Total iterations', max)
 console.log('Iteration/s', max / time * 1000)
-

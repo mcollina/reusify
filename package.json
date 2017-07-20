@@ -35,11 +35,11 @@
     "iojs": ">=1.0.0"
   },
   "devDependencies": {
-    "coveralls": "^2.11.6",
+    "coveralls": "^2.13.1",
     "faucet": "0.0.1",
-    "istanbul": "^0.4.1",
-    "pre-commit": "^1.1.1",
-    "standard": "^5.2.1",
-    "tape": "^4.2.0"
+    "istanbul": "^0.4.5",
+    "pre-commit": "^1.2.2",
+    "standard": "^10.0.0",
+    "tape": "^4.7.0"
   }
 }

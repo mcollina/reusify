@@ -8,6 +8,7 @@ var start = Date.now()
 // pattern, that delegates the heavy load
 // to something else
 function createNoCodeFunction () {
+  /* eslint no-constant-condition: "off" */
   var num = 100
 
   ;(function () {
@@ -27,4 +28,3 @@ var time = Date.now() - start
 console.log('Total time', time)
 console.log('Total iterations', max)
 console.log('Iteration/s', max / time * 1000)
-
