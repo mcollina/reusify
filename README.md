@@ -111,9 +111,9 @@ function MyObject () {
 
 ## Why
 
-It is faster because V8 do not have to collect all the functions you
-create. On a short-lived benchmark it is as fast as creating the
-nested function, but on a longer time frame it create less
+It is faster because V8 doesn't have to collect all the functions you
+create. On a short-lived benchmark, it is as fast as creating the
+nested function, but on a longer time frame it creates less
 pressure on the garbage collector.
 
 ## Other examples
