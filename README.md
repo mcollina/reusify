@@ -78,7 +78,7 @@ The above example was intended for synchronous code, let's see async:
 var reusify = require('reusify')
 var instance = reusify(MyObject)
 
-for (var i = 0; i < 100, i++) {
+for (var i = 0; i < 100; i++) {
   getData(i, console.log)
 }
 
@@ -92,7 +92,7 @@ function getData (value, cb) {
 
 function MyObject () {
   this.next = null
-  that.value = null
+  this.value = null
 
   var that = this
 
