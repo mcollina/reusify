@@ -1,6 +1,6 @@
 {
   "name": "reusify",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Reuse objects and functions with style",
   "main": "reusify.js",
   "scripts": {
