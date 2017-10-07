@@ -10,6 +10,7 @@ function reuseNoCodeFunction () {
   var obj = instance.get()
   obj.num = 100
   obj.func()
+  obj.num = 0
   instance.release(obj)
 }
 

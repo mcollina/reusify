@@ -36,19 +36,21 @@ var reusify = require('reusify')
 var fib = require('reusify/benchmarks/fib')
 var instance = reusify(MyObject)
 
-// get an object from the cache
+// get an object from the cache,
+// or creates a new one when cache is empty
 var obj = instance.get()
 
 // set the state
 obj.num = 100
 obj.func()
 
-// reset the state, if you depend on any
-// external object you need to null them
-// do not use delete, it is slow
+// reset the state.
+// if the state contains any external object
+// do not use delete operator (it is slow)
+// prefer set them to null
 obj.num = 0
 
-// release an object from the cache
+// store an object in the cache
 instance.release(obj)
 
 function MyObject () {
@@ -108,6 +110,11 @@ function MyObject () {
   }
 }
 ```
+
+Also note how in the above examples, the code, that consumes an istance of `MyObject`,
+reset the state to initial condition, just before storing it in the cache.
+That's needed so that every subsequent request for an instance from the cache,
+could get a clean instance.
 
 ## Why
 
