@@ -2,6 +2,7 @@
 
 function reusify (Constructor) {
   var head = new Constructor()
+  var tail = head
 
   function get () {
     var current = head
@@ -10,6 +11,7 @@ function reusify (Constructor) {
       head = current.next
     } else {
       head = new Constructor()
+      tail = head
     }
 
     current.next = null
@@ -18,7 +20,8 @@ function reusify (Constructor) {
   }
 
   function release (obj) {
-    head.next = obj
+    tail.next = obj
+    tail = obj
   }
 
   return {
