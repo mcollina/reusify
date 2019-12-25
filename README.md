@@ -111,7 +111,7 @@ function MyObject () {
 }
 ```
 
-Also note how in the above examples, the code, that consumes an istance of `MyObject`,
+Also note how in the above examples, the code, that consumes an instance of `MyObject`,
 reset the state to initial condition, just before storing it in the cache.
 That's needed so that every subsequent request for an instance from the cache,
 could get a clean instance.
