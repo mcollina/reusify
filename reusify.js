@@ -25,8 +25,8 @@ function reusify (Constructor) {
   }
 
   return {
-    get: get,
-    release: release
+    get,
+    release
   }
 }
 
