@@ -6,9 +6,7 @@
   "types": "reusify.d.ts",
   "scripts": {
     "lint": "standard",
-    "test": "tape test.js | faucet",
-    "istanbul": "istanbul cover tape test.js",
-    "coverage": "npm run istanbul; cat coverage/lcov.info | coveralls",
+    "test": "tape test.js",
     "test:typescript": "tsc"
   },
   "pre-commit": [
@@ -39,12 +37,9 @@
   },
   "devDependencies": {
     "@types/node": "^20.1.0",
-    "coveralls": "^2.13.3",
-    "faucet": "0.0.1",
-    "istanbul": "^0.4.5",
     "pre-commit": "^1.2.2",
     "standard": "^10.0.3",
-    "tape": "^4.8.0",
+    "tape": "^5.0.0",
     "typescript": "^5.2.2"
   }
 }
