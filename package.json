@@ -5,7 +5,7 @@
   "main": "reusify.js",
   "types": "reusify.d.ts",
   "scripts": {
-    "lint": "standard",
+    "lint": "eslint",
     "test": "tape test.js",
     "test:typescript": "tsc"
   },
@@ -37,8 +37,9 @@
   },
   "devDependencies": {
     "@types/node": "^20.1.0",
+    "eslint": "^9.13.0",
+    "neostandard": "^0.11.7",
     "pre-commit": "^1.2.2",
-    "standard": "^10.0.3",
     "tape": "^5.0.0",
     "typescript": "^5.2.2"
   }

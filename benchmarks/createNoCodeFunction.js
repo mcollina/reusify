@@ -1,15 +1,15 @@
 'use strict'
 
-var fib = require('./fib')
-var max = 100000000
-var start = Date.now()
+const fib = require('./fib')
+const max = 100000000
+const start = Date.now()
 
 // create a funcion with the typical error
 // pattern, that delegates the heavy load
 // to something else
 function createNoCodeFunction () {
   /* eslint no-constant-condition: "off" */
-  var num = 100
+  const num = 100
 
   ;(function () {
     if (null) {
@@ -20,11 +20,11 @@ function createNoCodeFunction () {
   })()
 }
 
-for (var i = 0; i < max; i++) {
+for (let i = 0; i < max; i++) {
   createNoCodeFunction()
 }
 
-var time = Date.now() - start
+const time = Date.now() - start
 console.log('Total time', time)
 console.log('Total iterations', max)
 console.log('Iteration/s', max / time * 1000)

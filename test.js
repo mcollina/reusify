@@ -1,7 +1,7 @@
 'use strict'
 
-var test = require('tape')
-var reusify = require('./')
+const test = require('tape')
+const reusify = require('./')
 
 test('reuse objects', function (t) {
   t.plan(6)
@@ -11,8 +11,8 @@ test('reuse objects', function (t) {
     this.next = null
   }
 
-  var instance = reusify(MyObject)
-  var obj = instance.get()
+  const instance = reusify(MyObject)
+  const obj = instance.get()
 
   t.notEqual(obj, instance.get(), 'two instance created')
   t.notOk(obj.next, 'next must be null')
@@ -35,10 +35,10 @@ test('reuse more than 2 objects', function (t) {
     this.next = null
   }
 
-  var instance = reusify(MyObject)
-  var obj = instance.get()
-  var obj2 = instance.get()
-  var obj3 = instance.get()
+  const instance = reusify(MyObject)
+  const obj = instance.get()
+  const obj2 = instance.get()
+  const obj3 = instance.get()
 
   t.notOk(obj.next, 'next must be null')
   t.notOk(obj2.next, 'next must be null')
@@ -55,9 +55,9 @@ test('reuse more than 2 objects', function (t) {
   // skip one
   instance.get()
 
-  var obj4 = instance.get()
-  var obj5 = instance.get()
-  var obj6 = instance.get()
+  const obj4 = instance.get()
+  const obj5 = instance.get()
+  const obj6 = instance.get()
 
   t.equal(obj4, obj)
   t.equal(obj5, obj2)

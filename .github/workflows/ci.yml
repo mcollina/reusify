@@ -64,7 +64,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 22
 
       - name: Install
         run: |
@@ -73,3 +73,24 @@ jobs:
       - name: Run types tests
         run: |
           npm run typescript
+
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22
+
+      - name: Install
+        run: |
+          npm install
+
+      - name: Lint
+        run: |
+          npm run lint
