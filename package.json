@@ -7,6 +7,7 @@
   "scripts": {
     "lint": "eslint",
     "test": "tape test.js",
+    "test:coverage": "c8 --100 tape test.js",
     "test:typescript": "tsc"
   },
   "pre-commit": [
@@ -42,5 +43,8 @@
     "pre-commit": "^1.2.2",
     "tape": "^5.0.0",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "c8": "^10.1.2"
   }
 }
