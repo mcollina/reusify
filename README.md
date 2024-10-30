@@ -1,8 +1,6 @@
 # reusify
 
 [![npm version][npm-badge]][npm-url]
-[![Build Status][travis-badge]][travis-url]
-[![Coverage Status][coveralls-badge]][coveralls-url]
 
 Reuse your objects and functions for maximum speed. This technique will
 make any function run ~10% faster. You call your functions a
@@ -139,7 +137,3 @@ MIT
 
 [npm-badge]: https://badge.fury.io/js/reusify.svg
 [npm-url]: https://badge.fury.io/js/reusify
-[travis-badge]: https://api.travis-ci.org/mcollina/reusify.svg
-[travis-url]: https://travis-ci.org/mcollina/reusify
-[coveralls-badge]: https://coveralls.io/repos/mcollina/reusify/badge.svg?branch=master&service=github
-[coveralls-url]:  https://coveralls.io/github/mcollina/reusify?branch=master
