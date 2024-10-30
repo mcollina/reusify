@@ -72,7 +72,7 @@ jobs:
 
       - name: Run types tests
         run: |
-          npm run typescript
+          npm run test:typescript
 
   lint:
     runs-on: ubuntu-latest
