@@ -1,11 +1,11 @@
 'use strict'
 
 function reusify (Constructor) {
-  let head = new Constructor()
-  let tail = head
+  var head = new Constructor()
+  var tail = head
 
   function get () {
-    const current = head
+    var current = head
 
     if (current.next) {
       head = current.next
@@ -25,8 +25,8 @@ function reusify (Constructor) {
   }
 
   return {
-    get,
-    release
+    get: get,
+    release: release
   }
 }
 
