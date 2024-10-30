@@ -5,10 +5,9 @@
   "main": "reusify.js",
   "types": "reusify.d.ts",
   "scripts": {
-    "lint": "standard",
-    "test": "tape test.js | faucet",
-    "istanbul": "istanbul cover tape test.js",
-    "coverage": "npm run istanbul; cat coverage/lcov.info | coveralls",
+    "lint": "eslint",
+    "test": "tape test.js",
+    "test:coverage": "c8 --100 tape test.js",
     "test:typescript": "tsc"
   },
   "pre-commit": [
@@ -39,12 +38,13 @@
   },
   "devDependencies": {
     "@types/node": "^20.1.0",
-    "coveralls": "^2.13.3",
-    "faucet": "0.0.1",
-    "istanbul": "^0.4.5",
+    "eslint": "^9.13.0",
+    "neostandard": "^0.11.7",
     "pre-commit": "^1.2.2",
-    "standard": "^10.0.3",
-    "tape": "^4.8.0",
+    "tape": "^5.0.0",
+    "c8": "^10.1.2",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
   }
 }
