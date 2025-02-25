@@ -15,6 +15,9 @@
     "test",
     "test:typescript"
   ],
+  "files": [
+    "reusify.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mcollina/reusify.git"
